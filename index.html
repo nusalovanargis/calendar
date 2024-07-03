@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="calendar-container">
+    <h1>Calendar</h1>
+    <div class="calendar">
+        <div class="calendar-header">
+            <button class="prev-month">&lt;&lt;</button>
+            <span class="month-year"></span>
+            <button class="next-month">&gt;&gt;</button>
+        </div>
+        <div class="calendar-body">
+            <div class="calendar-weekdays">
+                <div>Su</div>
+                <div>Mo</div>
+                <div>Tu</div>
+                <div>We</div>
+                <div>Th</div>
+                <div>Fr</div>
+                <div>Sa</div>
+            </div>
+            <div class="calendar-dates"></div>
+        </div>
+    </div>
+    <div class="date-info">
+        <div class="day-of-week"></div>
+        <div class="selected-date"></div>
+        <div class="holiday-info"></div>
+        <div class="upcoming-holidays">
+            <p>Upcoming</p>
+            <div class="holiday"></div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

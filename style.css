@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #596473;
+}
+
+h1{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.calendar-container {
+    text-align: center;
+    position: relative;
+}
+
+.calendar {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.calendar-header button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #7E57C2;
+}
+
+.month-year {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #7E57C2;
+}
+
+.calendar-weekdays, .calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-weekdays div, .calendar-dates div {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.calendar-weekdays div {
+    color: #7E57C2;
+}
+
+.calendar-dates div {
+    color: #333;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.calendar-dates div:hover {
+    background-color: #e0e0e0;
+}
+
+.calendar-dates .selected {
+    background-color: #7E57C2;
+    color: white;
+}
+
+.day-of-week{
+    color: #7E57C2;
+    margin-bottom: 5px;
+}
+
+.date-info {
+    background-color: #16161A;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 300px;
+    height: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    position: absolute;
+    left: 330px;
+    top: 10px;
+    text-align: left;
+}
+
+.date-info p{
+    color: #7E57C2;
+    margin-bottom: 20px;
+}
+
+.selected-date {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.holiday-info {
+    font-size: 1.2em;
+    margin: 40px 0;
+}
+
+.upcoming-holidays {
+    font-size: 1em;
+}
+
+.upcoming-holidays .holiday {
+    margin-bottom: 5px;
+}
+
+.upcoming-holidays .holiday span {
+    display: block;
+}
